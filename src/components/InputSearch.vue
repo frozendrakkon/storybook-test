@@ -23,20 +23,13 @@ const inputSearchDefaultProps = {
   disabled: true
 }
 
-export const args =  {
-  elem: {
-    placeholder: 'Это значение Аргументов из компонента',
-    disabled: false,
-  }
-  }
-
 export default defineComponent({
   props: {
     elem: {
       type: Object as PropType<InputSearchProp>,
       required: true,
       default: inputSearchDefaultProps
-    },
+    }
   },
 
   setup(props, { emit }) {
